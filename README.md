@@ -1,63 +1,52 @@
-# StayGreen 🟢
+# StayGreen
 
-Keep your Microsoft Teams / Slack status **green** while you step away.
-A tiny Windows tray app by [Fushi Work](https://fushiwork.com) - free, no account, no tracking.
+Away from your desk. Your status stays green.
 
-**[⬇ Download StayGreen.exe (latest)](https://github.com/fushiwork/staygreen/releases/latest/download/StayGreen.exe)**
-· [All releases](https://github.com/fushiwork/staygreen/releases)
-· [Website](https://fushiwork.com/en/apps/staygreen/)
+StayGreen is a small Windows app from [Fushi Work](https://fushiwork.com). When you step away for a few minutes, it keeps your Teams, Slack and Discord status green, so your teammates know you're still around. When you come back and move the mouse, it stops.
 
-> ⚠️ Use responsibly - some organizations do not allow tools like this. Check your company policy first.
+**[Download StayGreen](https://fushiwork.com/dl/staygreen)** · [Get Pro](https://ko-fi.com/s/a91d5be58b) · [Website](https://fushiwork.com/en/apps/staygreen/) · [All releases](https://github.com/fushiwork/staygreen/releases)
 
-## What it does
+Both editions are free. Windows 10 and 11, 64-bit. One file, no install, no account.
 
-- Sends a harmless keypress (`F15`, a key no app reacts to) on an interval, so your status stays **Active**
-- Stops the moment you touch the mouse or keyboard, and resumes when you step away
-- Work-hours schedule: pick days, hours and breaks - it rests outside them
-- Tray icon shows the state: blinking green = keeping you green · solid green = you are active · orange = off hours · gray = paused
-- Thai / English, follows your Windows language
-- Optional "Start with Windows" - starts quietly in the tray
+## How it works
 
-## Install
+- **When you step away:** after a minute of no activity, it sends a small signal so your PC knows someone's still there. It doesn't type or click anything.
+- **When you come back:** touch the mouse or keyboard and it stops right away.
+- **After work:** set your work days, hours and lunch break. Outside those times it does nothing.
 
-1. Download `StayGreen.exe` above - it is a single portable file, no installer.
-2. Put it anywhere (e.g. `Documents\Apps`) and double-click.
+## Basic and Pro
 
-Requires Windows 10 or 11 (64-bit) with Microsoft Edge WebView2 (already built into Windows 11 and up-to-date Windows 10).
+| | Basic | Pro |
+|---|---|---|
+| Keeps you green, stops when you're back | ✅ | ✅ |
+| Work hours, days and breaks | ✅ | ✅ |
+| Tray icon, Thai / English, start with Windows | ✅ | ✅ |
+| Signal interval and idle wait | 60 s | Adjustable |
+| Human-like timing | - | ✅ |
+| Activity graph, today summary, hourly heatmap | - | ✅ |
+| 12-month activity calendar | - | ✅ |
+| CSV export | - | ✅ |
 
-### "Windows protected your PC"?
+Pro is on Ko-fi with pay what you want - enter 0 if you like.
 
-StayGreen is not code-signed yet, so Windows SmartScreen may warn on first run.
-Click **More info → Run anyway**. Some antivirus tools may also flag it as a false
-positive, because it sends keypresses - it contains no malware.
-Each release lists a SHA-256 checksum so you can verify the file:
+## First run
+
+Windows may say "Windows protected your PC" because the app isn't code-signed yet. Click **More info**, then **Run anyway**. Some antivirus tools may also flag it by mistake. Each release lists a SHA-256 checksum so you can check the file:
 
 ```powershell
 Get-FileHash .\StayGreen.exe -Algorithm SHA256
 ```
 
+While StayGreen is keeping you green, Windows won't lock the screen or go to sleep on its own. Press Win + L if you walk away for long.
+
 ## Privacy
 
-Everything stays on your PC. Settings live in `%APPDATA%\StayGreen`; nothing is sent anywhere.
+Everything stays on your PC. Settings and activity live in `%APPDATA%\StayGreen`, and nothing is sent anywhere.
 
-## Pro
+## Contact
 
-A supporter edition with humanized timing and an activity dashboard is a thank-you
-for matcha tips - see [ko-fi.com/fushiwork](https://ko-fi.com/fushiwork).
+Questions or ideas: [hello@fushiwork.com](mailto:hello@fushiwork.com)
 
----
+Some companies don't allow tools like this, so check your company's rules before using it.
 
-## ภาษาไทย
-
-โปรแกรมเล็กๆ บน Windows ที่ช่วยให้สถานะ Teams / Slack **เขียวอยู่ตลอด** แม้ลุกไปพัก - ฟรี ไม่ต้องสมัคร ไม่เก็บข้อมูล
-
-**[⬇ ดาวน์โหลด StayGreen.exe (ล่าสุด)](https://github.com/fushiwork/staygreen/releases/latest/download/StayGreen.exe)**
-
-- ส่งปุ่ม `F15` (ปุ่มที่ไม่มีโปรแกรมไหนตอบสนอง) เป็นระยะ ให้สถานะยัง Active
-- หยุดทันทีที่คุณขยับเมาส์หรือพิมพ์ และกลับมาทำงานเมื่อคุณไม่อยู่
-- ตั้งวันและเวลาทำงาน + ช่วงพักได้ นอกเวลาจะพักเอง
-- ไฟล์เดียว ไม่ต้องติดตั้ง · ใช้กับ Windows 10/11 (64-bit)
-- ถ้าขึ้น "Windows protected your PC" ให้กด **More info → Run anyway** (โปรแกรมยังไม่ได้ sign)
-- ข้อมูลทั้งหมดอยู่ในเครื่องคุณ (`%APPDATA%\StayGreen`) ไม่ส่งไปไหน
-
-> ⚠️ บางองค์กรไม่อนุญาตให้ใช้เครื่องมือแบบนี้ กรุณาตรวจสอบนโยบายของบริษัทก่อนใช้
+Microsoft Teams, Slack and Discord are trademarks of their owners. StayGreen is not affiliated with them.
